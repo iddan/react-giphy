@@ -1,8 +1,8 @@
 <div align="center" href="">
   <img height="140" src="assets/giphy.png" alt="Giphy Logo" align="center" />
   <img width="167" src="assets/react.svg" alt="React Logo" align="center" />
-  <h1>React Giphy</h1>
-  <p>React components for <a href="https://developers.giphy.com/docs/">Giphy</a></p>
+  <h1>React GIPHY</h1>
+  <p>React components for <a href="https://developers.giphy.com/docs/">GIPHY</a></p>
 </div>
 
 ```bash
