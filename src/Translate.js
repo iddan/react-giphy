@@ -12,13 +12,15 @@ export default class Translate extends Component<Props, State> {
     gif: null
   };
 
-  async componentWillMount() {
+  componentWillMount() {
     const url = new URL("/v1/gifs/translate", "https://api.giphy.com");
     url.searchParams.append("api_key", this.props.apiKey);
     url.searchParams.append("s", this.props.searchTerm);
-    const res = await fetch(url.toString());
-    const { data: gif } = await (res.json() : Promise<{ data: GIFObject }>);
-    this.setState({ gif });
+    fetch(url.toString())
+      .then((res) => res.json())
+      .then(({ data: gif } : { data: GIFObject }) => {
+        this.setState({ gif });
+      })
   }
 
   render() {
