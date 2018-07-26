@@ -63,4 +63,4 @@ typings/
 # Compiled
 
 dist/
-
+!dist/index.js.flow
